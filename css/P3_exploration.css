@@ -1,0 +1,68 @@
+
+/*  -----------   Localisation  ------------------      */
+
+.location {
+    background-color: var(--light-grey);                                /* bandeau gris pour la localisation */
+}
+
+.search {                                                               /* positionnement de l'icon + input loc */
+    text-align: center;
+}
+
+.btn-loc {                                                              /* bouton pour icon                   */
+    background-color: var(--light-grey);
+    cursor:pointer;
+    border: none;
+    padding: 10px;
+}
+
+.fa-location-dot {                                                      /* icon localisation                  */
+    margin-left: 40px;
+    color: black;
+}
+
+.fa-location-dot:hover {
+    color: var(--primary);
+}
+
+.fa-location-dot:visited {
+    color: black;
+}
+
+input {                                                                 /* Zone de saisie Recherche de lieu */ 
+    padding: 10px ;
+    border: var(--light-grey);
+    width: 200px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--light-grey);
+    cursor:pointer;
+    }
+
+.description {                                                          /* Bloc descriptif fond gris très clair */
+    background-color: var(--white-smoke);
+    text-align: center;
+    padding: 30px 50px 30px 50px ;
+}
+
+.description h2 {
+    margin-top: 20px;
+}
+
+.btn-exp {
+    background-color: var(--secondary);                                /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--secondary), var(--primary));
+    color: white;
+    padding: 15px 20px;
+    margin: 20px 0 ;
+    border: none;
+    cursor:pointer;
+}
+
+/* ============================================== */
+/*   sur desktop    > 992 px : écran d'ordinateur */
+/* ============================================== */
+@media screen and (min-width: 992px)      
+{
+
+}

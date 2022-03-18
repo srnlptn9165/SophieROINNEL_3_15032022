@@ -1,0 +1,56 @@
+.fonctionnement {
+    margin: 50px 20px;
+}
+
+ol {
+    padding: 0;/*
+    border: 2px solid green;*/
+}
+
+.menu {
+    width: 100%;
+    padding: 20px;
+    margin: 15px;
+    margin-left: 0;
+    background-color: var(--white-smoke);/*
+    border: 2px dashed blue;*/
+    box-shadow: 0px 10px 10px var(--light-grey);
+}
+/*
+ol li {/*
+    border: 2px dotted red;*//*
+    padding: 5px;
+    
+}*/
+
+li i {
+    margin-right: 15px;
+}
+
+/* ================================================================== */ 
+/* ----- LIENS sans sous-lignage et avec changement au survol -----   */
+/* ================================================================== */ 
+
+a {
+    text-decoration: none;/* souligné du lien */
+    color: black;
+}
+
+a:visited {
+    color: black;
+  }
+
+i:hover {
+    color:var(--primary);
+}
+
+.menu:hover {
+    font-weight: bold;
+    background-color: var(--primary);
+    opacity: 0.1;
+    color: black;
+}
+
+
+
+

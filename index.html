@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="FR">
+    <head>
+        <meta charset="UTF-8">               
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport -- si user-scalable=no => impossibilite de zoomer -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <!-- fichiers css du plus generique au plus specifique -->
+            <script src="https://kit.fontawesome.com/ed96684d5d.js" crossorigin="anonymous"></script> <!-- pour utilisation des icons -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="./css/normalize.css" /> <!-- pour assurer la cohérence entre les navigateurs -->
+            <link rel="stylesheet" href="./css/P3_colors.css"/>
+            <link rel="stylesheet" href="./css/P3_main.css"/>
+            <link rel="stylesheet" href="./css/P3_exploration.css"/>
+            <link rel="stylesheet" href="./css/P3_fonctionnement.css"/>
+            <link rel="stylesheet" href="./css/P3_card.css"/>
+            <link rel="stylesheet" href="./css/P3_footer.css"/>
+            <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/P3_media_portable.css" /> 
+        <title>ohmyfood</title>
+    </head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__logo">
+            ohmyfood
+        </h1>      
+    </header>
+
+    <section class="exploration">
+    <!-- LOCATION -->
+
+        <div class="location">
+
+            <form class="search" >
+                <button class="btn-loc" type="submit">
+                    <i class="fa-solid  fa-location-dot icon--large" ></i>
+                </button>
+                <input type="text" placeholder="Paris, Belleville" name="search" autocomplete="off">     
+            </form>
+
+         </div>
+
+    <!-- LOCATION -->
+         <div class="description">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <button class="btn-txt btn-exp rounded-filter " onclick="filterSelection('Eco')">
+                Explorer nos restaurants
+            </button>
+            
+        </div>
+
+    </section>
+
+    <section class="fonctionnement">
+        <h2>Fonctionnement</h2>
+
+        <nav class="d">
+            <ol class="fct">
+                <li class="menu card-rounded" id="choix">
+                    <a class="test" href="#"></a>
+                        <i class="fa-solid fa-mobile-screen-button icon--large"></i>
+                        Choisissez un restaurant
+                    </a>
+                </li>
+                
+                
+                <li class="menu card-rounded" id="choix">
+                    <a class="test" href="#"></a>
+                        <i class="fa-solid fa-bars icon--large"></i>
+                        Composez votre menu
+                    </a>
+                </li>
+                
+                
+                <li class="menu card-rounded" id="choix">
+                    <a class="test" href="#"></a>
+                        <i class="fa-solid fa-store icon--large"></i>
+                        Dégustez au restaurant
+                    </a>
+                </li>
+                
+            </ol>
+        </nav>       
+
+                   
+            
+        </div>
+
+    </section>
+
+    <section class="Restaurants fond-grisclair">
+        <h2>Restaurants</h2>
+        <div class="Restaurants__Cards">
+
+            <a href="restaurant1.html">
+            <article class="card-restau">
+                <picture class="card-restau__photo">
+                    <p>img La palette du goût-img</p>
+                </picture>
+                <div class="card-restau__infos">
+                    <div class="card-restau_place">
+                        <p>La palette du goût - label</p>
+                        <p>La palette du goût - lieu</p>
+                    </div>
+                    <div classe="card-restau__coeur">
+                        <i>coeur</i>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+<a href="restaurant2.html">
+            <article class="card-restau">
+                <picture class="card-restau__photo">
+                    <p>img La note enchantée -img</p>
+                </picture>
+                <div class="card-restau__infos">
+                    <div class="card-restau_place">
+                        <p>La note enchantée - label</p>
+                        <p>La note enchantée - lieu</p>
+                    </div>
+                    <div classe="card-restau__coeur">
+                        <i>coeur</i>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <a href="restaurant3.html">
+            <article class="card-restau">
+                <picture class="card-restau__photo">
+                    <p>img A la française-img</p>
+                </picture>
+                <div class="card-restau__infos">
+                    <div class="card-restau_place">
+                        <p>A la française - label</p>
+                        <p>A la française - lieu</p>
+                    </div>
+                    <div classe="card-restau__coeur">
+                        <i>coeur</i>
+                    </div>
+                </div>
+            </article>
+        </a>
+        <a href="restaurant4.html">
+            <article class="card-restau">
+                <picture class="card-restau__photo">
+                    <p>img Le délice des sens -img</p>
+                </picture>
+                <div class="card-restau__infos">
+                    <div class="card-restau_place">
+                        <p>Le délice des sens  - label</p>
+                        <p>Le délice des sens  - lieu</p>
+                    </div>
+                    <div classe="card-restau__coeur">
+                        <i>coeur</i>
+                    </div>
+                </div>
+            </article>
+        </a>
+        </div>
+    </section>
+
+<!---->
+    <footer class="footer">
+  
+            <h2 class="footer_logo">ohmyfood</h2>
+            <div>
+                <div class="footer_liens_avec_icon">
+                    <ul class="bloc-liens">
+                        <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <a href="#">Proposer un restaurant</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            <a href="#">Devenir partenaire</a></li>
+                    </ul>
+                </div>
+                <div class="footer__liens_standard">
+                    <ul class="bloc-liens">
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="mailto:rnlsophie@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>      
+        </footer>
+
+    
+
+    </body>
+</html>
