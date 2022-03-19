@@ -2,7 +2,7 @@
 /*  -----------   Localisation  ------------------      */
 
 .location {
-    background-color: var(--light-grey);                                /* bandeau gris pour la localisation */
+    background-color: var(--grey);                                /* bandeau gris pour la localisation */
 }
 
 .search {                                                               /* positionnement de l'icon + input loc */
@@ -10,7 +10,7 @@
 }
 
 .btn-loc {                                                              /* bouton pour icon                   */
-    background-color: var(--light-grey);
+    background-color: var(--grey);
     cursor:pointer;
     border: none;
     padding: 10px;
@@ -31,16 +31,16 @@
 
 input {                                                                 /* Zone de saisie Recherche de lieu */ 
     padding: 10px ;
-    border: var(--light-grey);
+    border: var(--grey);
     width: 200px;
     font-size: 15px;
     font-weight: bold;
-    background-color: var(--light-grey);
+    background-color: var(--grey);
     cursor:pointer;
     }
 
 .description {                                                          /* Bloc descriptif fond gris très clair */
-    background-color: var(--white-smoke);
+    background-color: var(--light-grey);
     text-align: center;
     padding: 30px 50px 30px 50px ;
 }

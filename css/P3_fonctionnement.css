@@ -12,9 +12,10 @@ ol {
     padding: 20px;
     margin: 15px;
     margin-left: 0;
-    background-color: var(--white-smoke);/*
+    background-color: var(--light-grey);
+    font-weight: bold;/*
     border: 2px dashed blue;*/
-    box-shadow: 0px 10px 10px var(--light-grey);
+    box-shadow: 0px 10px 10px var(--grey);
 }
 /*
 ol li {/*
@@ -35,10 +36,10 @@ a {
     text-decoration: none;/* souligné du lien */
     color: black;
 }
-
+/*
 a:visited {
     color: black;
-  }
+  }*/
 
 i:hover {
     color:var(--primary);
@@ -46,9 +47,9 @@ i:hover {
 
 .menu:hover {
     font-weight: bold;
-    background-color: var(--primary);
-    opacity: 0.1;
-    color: black;
+    background-color: var(--light-secondary);
+    opacity: 0.5;/*
+    color: black;*/
 }
 
 

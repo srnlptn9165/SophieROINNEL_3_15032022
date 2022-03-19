@@ -43,11 +43,11 @@
 
          </div>
 
-    <!-- LOCATION -->
+    <!-- EXPLORATION -->
          <div class="description">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button class="btn-txt btn-exp rounded-filter " onclick="filterSelection('Eco')">
+            <button class="btn-txt btn-exp rounded-btn " onclick="filterSelection('Eco')">
                 Explorer nos restaurants
             </button>
             
@@ -55,6 +55,7 @@
 
     </section>
 
+  <!-- FONCTIONNEMENT -->
     <section class="fonctionnement">
         <h2>Fonctionnement</h2>
 
@@ -84,111 +85,122 @@
                 </li>
                 
             </ol>
-        </nav>       
-
-                   
-            
-        </div>
-
+        </nav>              
     </section>
 
-    <section class="Restaurants fond-grisclair">
+<!-- RESTAURANTS -->
+<!--
+    <section class="restaurants">
+        <h2>Restaurants test</h2>
+        <div class="restaurants__cards">
+
+            <article class="card-restau">
+                <picture class="card-restau__picture">       i         </picture>
+                
+                <div class="card-restau__place">         l           </div>
+                <div class="card-restau__heart">c</div>
+                
+            </article>
+            <article class="card-restau">
+                <picture class="card-restau__picture">       i         </picture>
+                <div class="card-restau__place">         l           </div>
+                <div class="card-restau__heart"><i>c</i></div>               
+            </article>
+    </section>-->
+
+
+    <section class="restaurants">
         <h2>Restaurants</h2>
-        <div class="Restaurants__Cards">
+        <div class="restaurants__cards">
 
             <a href="restaurant1.html">
-            <article class="card-restau">
-                <picture class="card-restau__photo">
-                    <p>img La palette du goût-img</p>
-                </picture>
-                <div class="card-restau__infos">
-                    <div class="card-restau_place">
-                        <p>La palette du goût - label</p>
-                        <p>La palette du goût - lieu</p>
+                <article class="card-restau rounded-card">
+                    <picture class="card-restau__picture">
+                        <img class="rounded-top-left rounded-top-right card-restau__img" src="./images/restaurants/PaletteDuGout.jpg" alt="La palette du goût"   title="La palette du goût" >
+                    </picture>
+                    <div class="card-restau__place">
+                        <p class="card-restau__label">La palette du goût</p>
+                        <p class="card-restau__loc">Ménilmontant</p>
                     </div>
-                    <div classe="card-restau__coeur">
-                        <i>coeur</i>
+                    <div class="card-restau__heart">
+                        <i class="fa-solid fa-heart icon--x-large"></i>
                     </div>
-                </div>
-            </article>
-        </a>
+                </article>
+            </a>
 
-<a href="restaurant2.html">
-            <article class="card-restau">
-                <picture class="card-restau__photo">
-                    <p>img La note enchantée -img</p>
-                </picture>
-                <div class="card-restau__infos">
-                    <div class="card-restau_place">
-                        <p>La note enchantée - label</p>
-                        <p>La note enchantée - lieu</p>
+            <a href="restaurant2.html">
+                <article class="card-restau rounded-card">
+                    <picture class="card-restau__picture">
+                        <img class="rounded-top-left rounded-top-right card-restau__img" src="./images/restaurants/NoteEnchantee.jpg" alt="La note enchantée"   title="La note enchantée" >
+                    </picture>
+                    <div class="card-restau__place">
+                        <p class="card-restau__label">La note enchantée</p>
+                        <p class="card-restau__loc">Charonne</p>
                     </div>
-                    <div classe="card-restau__coeur">
-                        <i>coeur</i>
+                    <div class="card-restau__heart">
+                        <i class="fa-solid fa-heart icon--x-large"></i>
                     </div>
-                </div>
-            </article>
-        </a>
+                </article>
+            </a>
 
-        <a href="restaurant3.html">
-            <article class="card-restau">
-                <picture class="card-restau__photo">
-                    <p>img A la française-img</p>
-                </picture>
-                <div class="card-restau__infos">
-                    <div class="card-restau_place">
-                        <p>A la française - label</p>
-                        <p>A la française - lieu</p>
+            <a href="restaurant3.html">
+                <article class="card-restau rounded-card">
+                    <picture class="card-restau__picture">
+                        <img class="rounded-top-left rounded-top-right card-restau__img" src="./images/restaurants/ALaFrancaise.jpg" alt="A la française"   title="A la française" >
+                    </picture>
+                    <div class="card-restau__place">
+                        <p class="card-restau__label">A la française</p>
+                        <p class="card-restau__loc">Cité Rouge</p>
                     </div>
-                    <div classe="card-restau__coeur">
-                        <i>coeur</i>
+                    <div class="card-restau__heart">
+                        <i class="fa-solid fa-heart icon--x-large"></i>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="restaurant4.html">
-            <article class="card-restau">
-                <picture class="card-restau__photo">
-                    <p>img Le délice des sens -img</p>
-                </picture>
-                <div class="card-restau__infos">
-                    <div class="card-restau_place">
-                        <p>Le délice des sens  - label</p>
-                        <p>Le délice des sens  - lieu</p>
+                </article>
+             </a>
+
+            <a href="restaurant4.html">
+                <article class="card-restau rounded-card">
+                    <picture class="card-restau__picture">
+                        <img class="rounded-top-left rounded-top-right card-restau__img" src="./images/restaurants/LeDeliceDesSens.jpg" alt="Le délice des sens"   title="Le délice des sens" >
+                    </picture>
+                    <div class="card-restau__place">
+                        <p class="card-restau__label">Le délice des sens</p>
+                        <p class="card-restau__loc">Folie Méricourt</p>
                     </div>
-                    <div classe="card-restau__coeur">
-                        <i>coeur</i>
+                    <div class="card-restau__heart">
+                        <i class="fa-solid fa-heart icon--x-large"></i>
                     </div>
-                </div>
-            </article>
-        </a>
+                </article>
+            </a>
         </div>
     </section>
 
-<!---->
+<!-- FOOTER -->
     <footer class="footer">
   
-            <h2 class="footer_logo">ohmyfood</h2>
-            <div>
-                <div class="footer_liens_avec_icon">
-                    <ul class="bloc-liens">
-                        <li>
-                            <i class="fa-solid fa-utensils"></i>
-                            <a href="#">Proposer un restaurant</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-handshake-angle"></i>
-                            <a href="#">Devenir partenaire</a></li>
-                    </ul>
+        <h2 class="footer__logo">ohmyfood</h2>
+        <div class="footer__liens" >
+
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                    <a class="lien--prop" href="#">Proposer un restaurant</a>
                 </div>
+                <div>
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <a class="lien--part" href="#">Devenir partenaire</a>
+                </div>
+                    <a class="lien--mp" href="#">Mentions légales</a>
+                    <a class="lien--mail" href="mailto:rnlsophie@gmail.com">Contact</a>
+        </div>
+                <!--
                 <div class="footer__liens_standard">
                     <ul class="bloc-liens">
                         <li><a href="#">Mentions légales</a></li>
                         <li><a href="mailto:rnlsophie@gmail.com">Contact</a></li>
                     </ul>
-                </div>
-            </div>      
-        </footer>
+                </div>-->
+                 
+    </footer>
 
     
 

@@ -1,32 +1,57 @@
 /* Footer - séparation du bloc précédent */
-.footer {
-    margin-top: 60px;
-    background-color: var(--grey);
-    padding: 20px;
+footer {
+    background-color: var(--dark-grey);
+    padding: 40px 20px 20px 20px;
     color: white;
 }
 
-.footer_logo {
+footer a {
+    color: white;
+}
+
+.footer__logo {
     font-family: var(--logo);
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 100;
 }
 
-.bloc-liens {
-    padding-left: 0;
-    list-style: none;
+.footer__liens {
+    color: white;
+    display: grid;
+    grid-template-columns: 20px 50px;
+    grid-template-rows: repeat(4, 20px);
+    background-color: red;
 }
 
-/* alignement des 3 blocs sur une même ligne */
-.footer__container {
-    width: 100%;
-    flex-direction: row;
-    margin-left: 2%;
+.fa-utensils{
+    display: grid;
+    grid-area: 1/1;
+    text-align: left;
 }
 
-/* alignement vertical des items de chaque bloc */
-.footer__bloc {
-    flex-direction: column;
+.lien--prop {
+    display: grid;
+    grid-area: 1/2/2/3;
 }
+
+.fa-handshake-angle {
+    display: grid;
+    grid-area: 2/1/3/2/;
+}
+
+.lien--part{
+    display: grid;
+    grid-area: 2/2/3/3;
+}
+.lien--mp {
+    display: grid;
+    grid-area: 3/1/3;
+}
+.lien--mail {
+    display: grid;
+    grid-area: 4/1/3;
+}
+
 
 /*   > 992 px : écran d'ordinateur */
 @media screen and (min-width: 992px)      

@@ -1,70 +1,78 @@
-/* section comprenant le bloc hébergement et le bloc des populaires (aside) */
-.s-hebergements {
-    margin: 20px 0 0 2%;
-}
-
-/* bloc titre + bloc des cartes hotels fond gris bords arrondis décalé + "afficher plus" */
-.b-hebergements {
-    padding: 10px 10px 10px 30px;
-}
-
-/* Particularité pour le titre de la section *//*
-.titre_section--hebergements {
-    border: 2px solid red;
-}*/
-
-/* bloc des cartes hotels *//*
-.b-card-hebergements {
-    border: 2px dotted green;
-}*/
-
-/* carte d'un hotel fond blanc, bords arrondis : img = nom - prix - étoiles *//*
-.b-card-hebergements__hotel a {
-    border: 2px dotted purple;
-  }*/
-
-.b-card-hebergements__hotel {
-    display: flex;
-    background-color: white;
-    width: 31%; 
-    margin : 15px 15px 0 0;/*espacement entre les card */     
-    height: 270px;/*
+/* RESTAURANTS */
+.restaurants {
+    background-color: var(--light-grey);              /* fond gris clair comme pour la partie Eploration */
+    margin-top: 50px ; 
+    padding: 20px;                                    /* bandeau gris pour la localisation *//*
     border: 2px dashed blue;*/
 }
+/*
+.restaurants h2 {                                     /* caractéristiques du titre de la section identiques à fonctionnement => à optimiser*//*
+    border: 2px dotted grey;
+}*/
+/*
+.restaurants__cards {                                  /* bloc des cartes pour positionnement sur version desktop */ /*
+    border: 2px dashed rgb(0, 255, 136);
+}*/
 
-/* picture */
-.b-card-hebergements__card-img {
-    width: 100%;
-    height: 160px;/*
-    border: 2px dashed green;*/
+.card-restau {     
+    margin: 20px 0; 
+    background-color: white;                                   /* bloc carte restaurant (image + texte + coeur) */
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 20px);
+    grid-template-rows: 1fr repeat(3, 20px);/*
+    border: 2px dashed rgb(255, 0, 0);*/
 }
 
-/* img bords haut arrondis */
-.b-card-hebergements__card-img-param {
-    display: block;
+.card-restau__picture {    
+    display: grid;                                     /* picture : photo du restaurant qui contiendra l'img*/
+    grid-area:1/1/2/5;/*
+    background-color: lightgreen;*/
+}
+
+.card-restau__img {                                    /* img bords haut arrondis */
     width: 100%;
-    height: 160px;
-    margin: 1px;
+    height: 200px;
     object-fit: cover;/*
-    border: 2px solid red;*/
+    border: 2px solid rgb(255, 0, 255);*/
 }
 
-/* bloc informations de la carte : libelle, prix, appréciation :  */
-.b-card-hebergements__card-infos {
-    margin: 5px;/*
-    border: 4px double purple;*/
+.card-restau__place {                                    /* bloc comprenant le label + le lieu */
+    display: grid;
+    grid-area:2/1/5/2;/*
+    background-color:  rgb(0, 217, 255);*/
 }
 
-/* paramètres des libellé, prix et étoiles dans le css général *//*
-
-/* bloc "Afficher plus" */
-.b-card-hebergements__plus {
-    padding-top: 40px;
-    padding-bottom: 20px;/*
-    border: 2px solid blue;*/
+.card-restau__heart {                                   /* bloc comprenant le coeur */
+    display: grid;
+    grid-area:3/3/4/4;/*
+    background-color: rgb(55, 0, 170);*/
 }
 
-.b-card-hebergements__plus--param {
-    font-size: 15px;
+ 
+/* ============================================== */
+/* --------- Restaurant : Nom - Lieu ------------ */
+/* ============================================== */
+.card-restau__label {
+    padding: 12px 0 6px 6px;
     font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+}
+
+.card-restau__loc {
+    font-size: 14px;
+    padding: 0 0 6px 6px;
+    margin: 0;
+}
+
+/* ============================================== */
+/* ------------------ Coeur ------------------- */
+/* ============================================== */
+
+.fa-heart{
+    color: var(--primary);
+}
+
+.fa-heart:hover {
+    color: var(--secundary);
 }

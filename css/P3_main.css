@@ -10,13 +10,14 @@
 
 body {
     width: 100%;
+    max-width: 700px;
     font-family: var(--text);
+    margin: auto;
 }
 
 /* ================================================================== */
 /* ------------        Taille POLICE CARACTERES         ------------- */
 /* ================================================================== */
-
 
 h1 {
     margin: 30px 30px 10px 30px;
@@ -37,28 +38,18 @@ h2 {
     border: 2px dotted blueviolet;*/
 }
 
-.btn-txt {
-    font-size: 15px;
-    font-weight: bold;
-    /*
-    border: 2px dotted green;*/
-}
-
 p {
     font-size: 18px;
     /*
     border: 2px dotted red;*/
 }
 
-
-/* ================================================================== */
-/*  ----                  LISTES numérotées                     ----- */
-/* ================================================================== */
-
-
-
-
-
+.btn-txt {
+    font-size: 15px;
+    font-weight: bold;
+    /*
+    border: 2px dotted green;*/
+}
 /* ================================================================== */ 
 /* ----------------             CONTAINERS                ----------- */
 /* ================================================================== */
@@ -131,11 +122,15 @@ p {
     border-bottom-right-radius: 15px;
 }
 
-.rounded-filter {
+.rounded-card {
+    border-radius: 15px;
+}
+
+.rounded-btn {
     border-radius: 35px;
 }
 
-.rond {
+.round {
     border-radius: 20%;
 }
 
@@ -182,36 +177,4 @@ p {
 
 .icon--xx-large {
     font-size: xx-large;
-}
-
-/* ============================================== */
-/* ------------- Nom et prix hotel -------------- */
-/* ============================================== */
-.card-infos__name--hotel {
-    margin: 6px 0 0 0;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.card-infos__price--hotel {
-    display: flex;
-    margin : 3px 0 3px 0;
-    font-size: 14px;
-    width: 100%;
-    padding-top: 5px;
-    /*
-    border: 2px dashed green;*/
-}
-
-/* ============================================== */
-/* ------------------ Etoiles ------------------- */
-/* ============================================== */
-.card-infos__star {
-    padding-top: 5px;
-    color: #0065FC;
-    display: flex;
-}
-
-.star--grey {
-    color: #F2F2F2;
 }
