@@ -9,6 +9,10 @@ footer a {
     color: white;
 }
 
+footer a:hover {
+    color: var(--primary);
+}
+
 .footer__logo {
     font-family: var(--logo);
     font-size: 16px;
@@ -60,9 +64,7 @@ footer a {
     grid-row-start: 4;
 }
 
-footer a:hover {
-    columns: var(--primary);
-}
+
 
 /*   > 992 px : écran d'ordinateur */
 @media screen and (min-width: 992px)      

@@ -69,10 +69,10 @@
 /* ------------------ Coeur ------------------- */
 /* ============================================== */
 
-.fa-heart{
-    color: var(--primary);
+.fa-heart {
+    color: black;
 }
 
 .fa-heart:hover {
-    color: var(--secundary);
+    color: var(--secondary);
 }

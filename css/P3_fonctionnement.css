@@ -3,6 +3,29 @@
 }
 
 ol {
+    counter-reset: fonction;                /* On crée une nouvelle instance du
+                                              compteur fonction avec chaque ol */
+    list-style-type: none;
+  }
+  
+ol li::before {
+    counter-increment: fonction;            /* On incrémente uniquement cette
+                                              instance du compteur */
+    content: counters(fonction,".") " ";    /* On ajoute la valeur de toutes les
+                                              instances séparées par ".". */
+                                           /* Si on doit supporter < IE8 il faudra
+                                              faire attention à ce qu'il n'y ait
+                                              aucun blanc après ',' */
+    border-radius: 35px;
+    background-color: var(--primary);
+    border: none;
+    padding: 5px 8px ;
+    color: white;
+  }
+
+
+
+ol {
     padding: 0;/*
     border: 2px solid green;*/
 }
@@ -13,16 +36,9 @@ ol {
     margin: 15px;
     margin-left: 0;
     background-color: var(--light-grey);
-    font-weight: bold;/*
-    border: 2px dashed blue;*/
+    font-weight: bold;
     box-shadow: 0px 10px 10px var(--grey);
 }
-/*
-ol li {/*
-    border: 2px dotted red;*//*
-    padding: 5px;
-    
-}*/
 
 li i {
     margin-right: 15px;
@@ -36,20 +52,15 @@ a {
     text-decoration: none;/* souligné du lien */
     color: black;
 }
-/*
-a:visited {
-    color: black;
-  }*/
 
-i:hover {
+
+.fonctionnement i:hover {
     color:var(--primary);
 }
 
 .menu:hover {
     font-weight: bold;
     background-color: var(--light-secondary);
-    opacity: 0.5;/*
-    color: black;*/
 }
 
 
