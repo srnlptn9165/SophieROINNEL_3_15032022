@@ -21,6 +21,7 @@ ol li::before {
     border: none;
     padding: 5px 8px ;
     color: white;
+    margin-left: -30px;
   }
 
 
@@ -40,8 +41,10 @@ ol {
     box-shadow: 0px 10px 10px var(--grey);
 }
 
+
 li i {
     margin-right: 15px;
+    margin-left: 15px;
 }
 
 /* ================================================================== */ 
