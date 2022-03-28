@@ -1,4 +1,5 @@
-.header--menu {
+/* ----------------------------------------*/
+.header--menu {                                                         /* bloc ENTETE*/
     width: 100%;
     margin: auto;
     padding: auto;
@@ -8,30 +9,88 @@
     ;
 }
 
-.fa-arrow-left {
+.fa-arrow-left {                                                        /* flèche de retour dans l'entete */
     grid-column: 1;
     text-align: center;
     margin: 40px 15px 10px 25px;
 }
 
-.header__logo {
+.header__logo {                                                         /* titre du site  */
     grid-column: 2;
     text-align: center;
 }
-
-.restau__picture {
+/* ----------------------------------------*/
+.restau__picture {                                                      /* Bloc picture du restaurant consulté  */
     width: 100%;
     height:400px;
     margin: 0;
 }
 
-.restau__picture .card-restau__img {
+.restau__picture .card-restau__img {                                    /* photo du restaurant consulté */
     height: 300px;
     width: 100%;
     object-fit: cover;
 }
-
-.restau__menu {
+/* ----------------------------------------*/
+.restau__menu {                                                         /* Bloc main de la page nom/coeur + articles menu + btn cde*/
     background-color: var(--light-grey);
     margin: 0;
+    border: purple 2px dashed;
 }
+
+.reference {                                                            /* Bloc nom restau + coeur */
+    display: flex;
+    justify-content: space-between;
+}
+
+.reference h1  {                                                         /* Nom du restaurant */
+        
+}
+
+.reference .fa-heart  {                                                  /* coeur page restaurant */
+    padding: 30px;
+    background-color: yellow;
+    columns: red    ;
+}
+
+.menus {                                                                /* Bloc div Entrées + Plats + desserts */     
+    border: 2px red solid;
+}
+    
+.article--menu {                                                       /* Bloc Article menus */
+    border : 2px blue dotted;
+}
+
+h2 .article--menu {                                                     /* Titre des articles menus */
+    border : 2px green dashed
+    text-transform: uppercase
+}
+
+.card-menu {                                                           /* label + commentaire + prix */
+    background-color: white;                                   
+    display: grid;
+    grid-template-columns: 80px 20px;
+    grid-template-rows:20px 20px;
+    margin : 10px;
+    border-radius : 20px;
+}
+
+
+.card-menu__label {                                                   /* label du plat */
+    display: grid;                                     
+    grid-area:1/1/2/3;
+    background-color: lightgreen;
+}
+
+.card-menu__commentaire {                                               /* commentaire du plat */
+   display: grid;
+   grid-area:2/1/3/2;
+   background-color: blue;
+}
+
+
+.card-menu__prix {                                               /* prix du plat */
+    display: grid;
+    grid-area:2/2/3/3;
+    background-color: aqua;
+ }
