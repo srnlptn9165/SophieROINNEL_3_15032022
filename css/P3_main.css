@@ -10,9 +10,10 @@
 
 body {
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
     font-family: var(--text);
     margin: auto;
+
 }
 
 /* ================================================================== */
@@ -27,13 +28,22 @@ h1 {
     color:black;
 }
  
-input {
+input[type=submit] {
+    background-color: var(--secondary);                                /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--secondary), var(--primary));
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
     display: inline-block;
+    margin: 20px;
+    padding: 15px 20px;
 }
 
 h2 {
     font-size: 25px;
     font-weight: bold;
+    
     /*
     border: 2px dotted blueviolet;*/
 }

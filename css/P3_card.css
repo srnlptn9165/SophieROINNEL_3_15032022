@@ -82,10 +82,26 @@
 /* ------------------ Coeur ------------------- */
 /* ============================================== */
 
-.fa-heart {
+#heart {
+    display: none;
+}
+
+label.far {
+    color: black;
+}
+  
+#heart + label.far:before {
+    content: "\f004"; /* heart */
+  }
+  
+#heart:hover + label.far::after {
+    content: "\f0aa";
+  }
+
+.card-restau__heart .fa-heart {
     color: black;
 }
 
-.fa-heart:hover {
+.card-restau__heart .fa-heart:hover {
     color: var(--secondary);
 }

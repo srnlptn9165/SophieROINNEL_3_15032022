@@ -47,6 +47,8 @@
             <div class="description">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                <!--
+                <input type="text" value="Explorer nos restaurants"> -->
                 <button class="btn-txt btn-exp rounded-btn " onclick="filterSelection('Eco')">
                     Explorer nos restaurants
                 </button>
@@ -104,10 +106,14 @@
                             <p class="card-restau__label">La palette du goût</p>
                             <p class="card-restau__loc">Ménilmontant</p>
                         </div>
-                        <div class="card-restau__heart">
-                            <i class="fa-regular fa-heart icon--x-large"></i><!--
-                            <i class="fa-solid fa-heart icon--x-large"></i>-->
-                        </div>
+                        <form>
+                            <div class="card-restau__heart">
+                                <input type="checkbox" id="heart" >
+                                <label for="heart" class="far icon--x-large"></label>
+                                <i class="fa-regular fa-heart icon--x-large"></i><!--
+                                <i class="fa-solid fa-heart icon--x-large"></i>-->
+                            </div>
+                        </form>
                     </article>
                 </a>
 
