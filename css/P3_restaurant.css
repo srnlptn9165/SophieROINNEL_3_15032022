@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 100%;
-    ;
 }
 
 .fa-arrow-left {                                                        /* flèche de retour dans l'entete */
@@ -43,9 +42,9 @@
     justify-content: space-between;
 }
 
-.reference h1  {                                                         /* Nom du restaurant */
-        
-}
+
+
+
 
 .reference .fa-heart  {                                                  /* coeur page restaurant */
     padding: 30px;
@@ -61,10 +60,7 @@
     border : 2px blue dotted;
 }
 
-h2 .article--menu {                                                     /* Titre des articles menus */
-    border : 2px green dashed
-    text-transform: uppercase
-}
+
 
 .card-menu {                                                           /* label + commentaire + prix */
     background-color: white;                                   

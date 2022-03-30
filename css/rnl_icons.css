@@ -1,0 +1,23 @@
+/* ================================================================== */
+/*   -----                      ICONS                           ----- */
+/* ================================================================== */
+
+.icon--small {
+    font-size: small;
+} 
+
+.icon--medium {
+    font-size: medium;
+}
+
+.icon--x-large {
+    font-size: x-large;
+}
+
+.icon--large {
+    font-size: large;
+}
+
+.icon--xx-large {
+    font-size: xx-large;
+}

@@ -3,33 +3,18 @@
     box-sizing: border-box; 
 }
 
-:root {
-    --text : 'Roboto';
-    --logo : 'Shrikhand';
-}
-
 body {
     width: 100%;
     max-width: 600px;
-    font-family: var(--text);
     margin: auto;
-
 }
 
 /* ================================================================== */
-/* ------------        Taille POLICE CARACTERES         ------------- */
+/* ------------                    FORMES               ------------- */
 /* ================================================================== */
-
-h1 {
-    margin: 30px 30px 10px 30px;
-    font-family: var(--logo);  
-    text-align: center;
-    font-size: 30px;
-    color:black;
-}
- 
+/*
 input[type=submit] {
-    background-color: var(--secondary);                                /* For browsers that do not support gradients */
+    background-color: var(--secondary);                                /* For browsers that do not support gradients *//*
     background-image: linear-gradient(var(--secondary), var(--primary));
     color: white;
     border: none;
@@ -38,28 +23,8 @@ input[type=submit] {
     display: inline-block;
     margin: 20px;
     padding: 15px 20px;
-}
+}*/
 
-h2 {
-    font-size: 25px;
-    font-weight: bold;
-    
-    /*
-    border: 2px dotted blueviolet;*/
-}
-
-p {
-    font-size: 18px;
-    /*
-    border: 2px dotted red;*/
-}
-
-.btn-txt {
-    font-size: 15px;
-    font-weight: bold;
-    /*
-    border: 2px dotted green;*/
-}
 /* ================================================================== */ 
 /* ----------------             CONTAINERS                ----------- */
 /* ================================================================== */

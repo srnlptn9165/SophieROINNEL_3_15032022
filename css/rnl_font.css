@@ -1,0 +1,82 @@
+/*  box-sizing => content-box|border-box|inherit */
+:root {
+    --text : 'Roboto';
+    --logo : 'Shrikhand';
+}
+
+body {
+    font-family: var(--text);
+}
+
+/* ================================================================== */
+/* ------------        Taille POLICE CARACTERES         ------------- */
+/* ================================================================== */
+
+h1 {
+    margin: 30px 30px 10px 30px;
+    font-family: var(--logo);  
+    text-align: center;
+    font-size: 30px;
+    color:black;
+}
+ 
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    
+    /*
+    border: 2px dotted blueviolet;*/
+}
+
+.reference h2{
+    font-family: var(--logo);
+    text-align: left;
+    font-size: 25px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;   
+}
+
+p {
+    font-size: 18px;
+}
+
+input  {
+    font-size: 15px;
+}
+
+/* =================================== */
+/* *****   TAILLE POLICES STD    ***** */
+/* =================================== */
+
+.rnl_font--15b { /* pages accueil et menus : label du restau et label du plat */
+    font-weight: bold;
+    font-size: 15px;
+}
+.rnl_font--15 { /*page accueil : loc du restau */
+    font-size: 15px;
+}
+
+.rnl_font--13 { /*page accueil : loc du restau */
+    font-size: 13px;
+}
+
+/* =================================== */
+/* ***** MAJUSCULES / MINUSCULES ***** */
+/* =================================== */
+h3.uppercase {
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  
+p.lowercase {
+    text-transform: lowercase;
+  }
+  
+p.capitalize {
+    text-transform: capitalize;
+  }
+
+span.capitalize {
+    text-transform:capitalize;
+}

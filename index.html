@@ -11,8 +11,10 @@
             <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="./css/normalize.css" /> <!-- pour assurer la cohérence entre les navigateurs -->
-            <link rel="stylesheet" href="./css/P3_colors.css"/>
-            <link rel="stylesheet" href="./css/P3_main.css"/>
+            <link rel="stylesheet" href="./css/rnl_main.css"/>
+            <link rel="stylesheet" href="./css/rnl_colors.css"/>
+            <link rel="stylesheet" href="./css/rnl_font.css"/>
+            <link rel="stylesheet" href="./css/rnl_icons.css"/>           
             <link rel="stylesheet" href="./css/P3_exploration.css"/>
             <link rel="stylesheet" href="./css/P3_fonctionnement.css"/>
             <link rel="stylesheet" href="./css/P3_card.css"/>
@@ -30,8 +32,8 @@
         </header>
 
         <section class="exploration">
-        <!-- LOCATION -->
 
+<!-- LOCATION -->
             <div class="location">
 
                 <form class="search" >
@@ -43,44 +45,39 @@
 
             </div>
 
-        <!-- EXPLORATION -->
+<!-- EXPLORATION -->
             <div class="description">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                <!--
-                <input type="text" value="Explorer nos restaurants"> -->
-                <button class="btn-txt btn-exp rounded-btn " onclick="filterSelection('Eco')">
-                    Explorer nos restaurants
-                </button>
-                
+                <input type="button" value="Explorer nos restaurants" class="rounded-btn btn-exp" onclick="">            
             </div>
 
         </section>
 
-    <!-- FONCTIONNEMENT -->
+<!-- FONCTIONNEMENT -->
         <section class="fonctionnement">
             <h2>Fonctionnement</h2>
 
             <nav class="d">
                 <ol class="fct">
-                    <li class="menu card-rounded" id="choix">
-                        <a class="test" href="#"></a>
+                    <li class="menu card-rounded choix">
+                        <a class="test" href="#">
                             <i class="fa-solid fa-mobile-screen-button icon--x-large"></i>
                             Choisissez un restaurant
                         </a>
                     </li>
                     
                     
-                    <li class="menu card-rounded" id="choix">
-                        <a class="test" href="#"></a>
+                    <li class="menu card-rounded choix">
+                        <a class="test" href="#">
                             <i class="fa-solid fa-bars icon--x-large"></i>
                             Composez votre menu
                         </a>
                     </li>
                     
                     
-                    <li class="menu card-rounded" id="choix">
-                        <a class="test" href="#"></a>
+                    <li class="menu card-rounded choix">
+                        <a class="test" href="#">
                             <i class="fa-solid fa-store icon--x-large"></i>
                             Dégustez au restaurant
                         </a>
@@ -90,8 +87,7 @@
             </nav>              
         </section>
 
-    <!-- RESTAURANTS -->
-
+<!-- RESTAURANTS -->
         <section class="restaurants">
             <h2>Restaurants</h2>
             <div class="restaurants__cards">
@@ -100,11 +96,11 @@
                     <article class="card-restau rounded-card">
                         <picture class="card-restau__picture">
                             <img class="rounded-top-left rounded-top-right card-restau__img" src="./images/restaurants/PaletteDuGout.jpg" alt="La palette du goût"   title="La palette du goût" >
-                            <span class="new">Nouveau         </span>
+                            <span class="new">Nouveau</span>
                         </picture>
                         <div class="card-restau__place">
-                            <p class="card-restau__label">La palette du goût</p>
-                            <p class="card-restau__loc">Ménilmontant</p>
+                            <p class="card-restau__label rnl_font--15b">La palette du goût</p>
+                            <p class="card-restau__loc rnl_font--15">Ménilmontant</p>
                         </div>
                         <form>
                             <div class="card-restau__heart">
@@ -124,8 +120,8 @@
                             <span class="new">Nouveau         </span>
                         </picture>
                         <div class="card-restau__place">
-                            <p class="card-restau__label">La note enchantée</p>
-                            <p class="card-restau__loc">Charonne</p>
+                            <p class="card-restau__label rnl_font--15b">La note enchantée</p>
+                            <p class="card-restau__loc rnl_font--15">Charonne</p>
                         </div>
                         <div class="card-restau__heart">
                             <i class="fa-regular fa-heart icon--x-large"></i>
@@ -140,8 +136,8 @@
                             <img class="rounded-top-left rounded-top-right card-restau__img" src="./images/restaurants/ALaFrancaise.jpg" alt="A la française"   title="A la française" >
                         </picture>
                         <div class="card-restau__place">
-                            <p class="card-restau__label">A la française</p>
-                            <p class="card-restau__loc">Cité Rouge</p>
+                            <p class="card-restau__label rnl_font--15b">A la française</p>
+                            <p class="card-restau__loc rnl_font--15">Cité Rouge</p>
                         </div>
                         <div class="card-restau__heart">
                             <i class="fa-regular fa-heart icon--x-large"></i>
@@ -156,8 +152,8 @@
                             <img class="rounded-top-left rounded-top-right card-restau__img" src="./images/restaurants/LeDeliceDesSens.jpg" alt="Le délice des sens"   title="Le délice des sens" >
                         </picture>
                         <div class="card-restau__place">
-                            <p class="card-restau__label">Le délice des sens</p>
-                            <p class="card-restau__loc">Folie Méricourt</p>
+                            <p class="card-restau__label rnl_font--15b">Le délice des sens</p>
+                            <p class="card-restau__loc rnl_font--15">Folie Méricourt</p>
                         </div>
                         <div class="card-restau__heart">
                             <i class="fa-regular fa-heart icon--x-large"></i>

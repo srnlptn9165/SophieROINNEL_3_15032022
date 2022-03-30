@@ -5,14 +5,6 @@
     padding: 20px;                                    /* bandeau gris pour la localisation *//*
     border: 2px dashed blue;*/
 }
-/*
-.restaurants h2 {                                     /* caractéristiques du titre de la section identiques à fonctionnement => à optimiser*//*
-    border: 2px dotted grey;
-}*/
-/*
-.restaurants__cards {                                  /* bloc des cartes pour positionnement sur version desktop */ /*
-    border: 2px dashed rgb(0, 255, 136);
-}*/
 
 .card-restau {     
     margin: 20px 0; 
@@ -40,11 +32,10 @@
 .new {
     position: absolute;
     top :20px;
-    right :100px;
+    right :30px;
     height: 30px;
-    text-align:center;
     font-weight:bold;
-    padding:5px 0;
+    padding:10px;
     background-color: var(--tertiary);
     color : var(--dark-tertiary);
 }
@@ -67,13 +58,10 @@
 /* ============================================== */
 .card-restau__label {
     padding: 12px 0 6px 6px;
-    font-weight: bold;
-    font-size: 15px;
     margin: 0;
 }
 
 .card-restau__loc {
-    font-size: 14px;
     padding: 0 0 6px 6px;
     margin: 0;
 }
