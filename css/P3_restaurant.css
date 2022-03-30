@@ -28,14 +28,14 @@
 .restau__picture {
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 250px;
     left:0px;
     z-index:-1;
 }
 
 img.restau-img {
     width: 100%;
-    height : 300px;
+    height : 250px;
     object-fit: cover;
 }
 
@@ -43,9 +43,7 @@ img.restau-img {
 .restau__menu {               /* Bloc main de la page nom/coeur + articles menu + btn cde*/
     background-color: var(--light-grey);
     position: relative;
-    top: -30px;/*
-    width: 400px;
-    z-index: 1;*/
+    top: -30px;
 }
 
 .reference {  /* Bloc nom restau + coeur */
@@ -60,9 +58,16 @@ img.restau-img {
 }
 
 .deroule {
-    margin-top: 20px;
+    margin-top: 30px;
     padding-left: 10px;
+    margin-bottom: 20px;
 }
+
+.deroule span { /* souligne 4 caractères début article menu */
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--tertiary);
+}
+
 .article--menu {                                                       /* Bloc Article menus */
     display: flex;
     flex-direction: column;
@@ -119,12 +124,12 @@ img.restau-img {
 
  .box_restau-btn {
     position: relative;
-    height: 100px;
+    height: 120px;
  }
 
  .restau-btn {
     position: absolute;
-    top:25px;
+    top:30px;
     left: 50%;
     transform: translate(-50%,-50%);
  }
