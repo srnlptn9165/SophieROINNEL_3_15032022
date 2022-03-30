@@ -28,7 +28,7 @@
 .fa-location-dot:visited {
     color: black;
 }
-/*attention ne concerne pas tous les input ! */
+/*attention peut ne pas concerner pas tous les input ! */
 input {                                                                 /* Zone de saisie Recherche de lieu */ 
     padding: 10px ;
     border: var(--grey);

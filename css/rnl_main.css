@@ -4,26 +4,16 @@
 }
 
 body {
+    max-width: 400px;
     width: 100%;
-    max-width: 600px;
     margin: auto;
 }
 
 /* ================================================================== */
 /* ------------                    FORMES               ------------- */
 /* ================================================================== */
-/*
-input[type=submit] {
-    background-color: var(--secondary);                                /* For browsers that do not support gradients *//*
-    background-image: linear-gradient(var(--secondary), var(--primary));
-    color: white;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    margin: 20px;
-    padding: 15px 20px;
-}*/
+
+
 
 /* ================================================================== */ 
 /* ----------------             CONTAINERS                ----------- */
@@ -75,6 +65,16 @@ input[type=submit] {
     /*
     border: 2px solid rgb(231, 60, 89);*/
    }
+
+.eighty-container {
+    display: block;
+    width: 80%;
+}
+
+.twenty-container {
+    display: block;
+    width: 20%;
+}
 
 /* ================================================================== */
 /* -----------   BORDS ARRONDIS pour cartes ou boutons  ------------- */

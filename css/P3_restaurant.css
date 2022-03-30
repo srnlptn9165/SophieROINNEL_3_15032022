@@ -1,16 +1,21 @@
 /* ----------------------------------------*/
 .header--menu {                                                         /* bloc ENTETE*/
     width: 100%;
-    margin: auto;
+    margin: 0;
     padding: auto;
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 100%;
 }
 
+.header__a {
+    display: inline-block;
+}
+
 .fa-arrow-left {                                                        /* flèche de retour dans l'entete */
     grid-column: 1;
     text-align: center;
+    vertical-align: center;
     margin: 40px 15px 10px 25px;
 }
 
@@ -19,74 +24,120 @@
     text-align: center;
 }
 /* ----------------------------------------*/
-.restau__picture {                                                      /* Bloc picture du restaurant consulté  */
+
+.restau__picture {
     width: 100%;
-    height:400px;
-    margin: 0;
+    height: 350px;
 }
 
-.restau__picture .card-restau__img {                                    /* photo du restaurant consulté */
-    height: 300px;
+img.restau-img {
     width: 100%;
+    height : 350px;
     object-fit: cover;
 }
+
 /* ----------------------------------------*/
-.restau__menu {                                                         /* Bloc main de la page nom/coeur + articles menu + btn cde*/
+.restau__menu {               /* Bloc main de la page nom/coeur + articles menu + btn cde*/
     background-color: var(--light-grey);
-    margin: 0;
-    border: purple 2px dashed;
+    position: absolute;
+    z-index: 1;
+    top: 400px;
+    width: 400px;
 }
 
-.reference {                                                            /* Bloc nom restau + coeur */
+.reference {  /* Bloc nom restau + coeur */
+    padding-left: 10px;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
-
-
-
-
-.reference .fa-heart  {                                                  /* coeur page restaurant */
-    padding: 30px;
-    background-color: yellow;
-    columns: red    ;
+.reference .fa-heart  {          /* coeur page restaurant */
+    padding: 20px;
 }
 
-.menus {                                                                /* Bloc div Entrées + Plats + desserts */     
-    border: 2px red solid;
+   
+.deroule {
+    margin-top: 20px;
+    padding-left: 10px;
 }
-    
 .article--menu {                                                       /* Bloc Article menus */
-    border : 2px blue dotted;
+    display: flex;
+    flex-direction: column;
+    }
+
+.deroule h3 {
+    padding: 0;
+    margin: 0;
 }
 
+.deroule p {
+    padding: 0;
+    margin: 0;
+}
 
+.deroule {
+    display: flex;
+    flex-direction: column;
+}
 
-.card-menu {                                                           /* label + commentaire + prix */
+.card-menu {               /* label + commentaire + prix */
     background-color: white;                                   
-    display: grid;
-    grid-template-columns: 80px 20px;
-    grid-template-rows:20px 20px;
-    margin : 10px;
     border-radius : 20px;
+    display: flex;
+    flex-direction: row;
+    margin:  6px 10px ;
+    height: 60px;
 }
 
-
-.card-menu__label {                                                   /* label du plat */
-    display: grid;                                     
-    grid-area:1/1/2/3;
-    background-color: lightgreen;
+.card-menu__boxtext{
+    margin: auto;
 }
 
-.card-menu__commentaire {                                               /* commentaire du plat */
-   display: grid;
-   grid-area:2/1/3/2;
-   background-color: blue;
+.card-menu__label {     /* label du plat */
+    padding : 5px 0 5px 20px;
+    margin: 0;
 }
 
+.card-menu__commentaire {  /* commentaire du plat */
+    padding-left: 20px;
+    margin: 0;
+}
 
-.card-menu__prix {                                               /* prix du plat */
-    display: grid;
-    grid-area:2/2/3/3;
-    background-color: aqua;
+.card-menu__boxprix{
+    display: flex;   
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.card-menu__prix {   /* prix du plat */
+    margin: 0;
  }
+
+ .box_restau-btn {
+    position: relative;
+    height: 100px;
+ }
+
+ .restau-btn {
+    position: absolute;
+    top:40px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+ .footer--menu {
+     position   : relative;
+     height: 150px;
+ }
+
+ .box_footer--menu {
+    position: absolute;
+    top:40px;
+ }
+
+
+
+
+

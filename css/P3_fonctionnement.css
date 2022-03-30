@@ -25,7 +25,6 @@ ol li::before {
   }
 
 
-
 ol {
     padding: 0;/*
     border: 2px solid green;*/
@@ -47,14 +46,10 @@ li i {
     margin-left: 15px;
 }
 
-/* ================================================================== */ 
-/* ----- LIENS sans sous-lignage et avec changement au survol -----   */
-/* ================================================================== */ 
 
-a {
-    text-decoration: none;/* souligné du lien */
-    color: black;
-}
+/* ================================================================== */ 
+/* -----  changement au survol -----   */
+/* ================================================================== */ 
 
 
 .fonctionnement i:hover {
@@ -65,7 +60,6 @@ a {
     font-weight: bold;
     background-color: var(--light-secondary);
 }
-
 
 
 

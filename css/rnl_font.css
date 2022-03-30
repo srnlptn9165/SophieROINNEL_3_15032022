@@ -31,10 +31,10 @@ h2 {
 .reference h2{
     font-family: var(--logo);
     text-align: left;
-    font-size: 25px;
     color: black;
     margin-top: 20px;
     margin-bottom: 10px;   
+    font-size: 28px;
 }
 
 p {
@@ -48,6 +48,9 @@ input  {
 /* =================================== */
 /* *****   TAILLE POLICES STD    ***** */
 /* =================================== */
+.rnl_font--13 { /*page accueil : loc du restau */
+    font-size: 13px;
+}
 
 .rnl_font--15b { /* pages accueil et menus : label du restau et label du plat */
     font-weight: bold;
@@ -80,3 +83,15 @@ p.capitalize {
 span.capitalize {
     text-transform:capitalize;
 }
+
+/* ================================================================== */ 
+/* ----- LIENS sans sous-lignage et noirs -----   */
+/* ================================================================== */ 
+
+a {
+    text-decoration: none;/* souligné du lien */
+    color: black;
+}
+
+
+
