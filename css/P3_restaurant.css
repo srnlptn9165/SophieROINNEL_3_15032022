@@ -121,8 +121,8 @@ img.restau-img {
 .card-menu__prix {   /* prix du plat */
     margin: 0;
  }
-
- .box_restau-btn {
+/* ---------------------------------------- */
+ .box_restau-btn {              /* positionnement du bouton "commander" */
     position: relative;
     height: 120px;
  }
@@ -134,10 +134,31 @@ img.restau-img {
     transform: translate(-50%,-50%);
  }
 
- .footer--menu {
+/* ---------------------------------------- */
+ .footer--menu {              /* positionnement du footer */
      position   : relative;
      height: 230px;
      top: -30px;
+ }
+
+/* -------------------------------*/
+/*    Survol du prix d'un plat    */
+/* -------------------------------*/
+.fa-circle-check{              /* non affichage de l'icon check */
+    display:none
+}
+ .card-menu__boxprix:hover {   /* Survol du prix d'un plat pour affichage icon check*/
+    color: var(--tertiary);
+ }
+    
+    .fa-circle-check {
+        color: var(--tertiary);
+    }
+    
+ 
+
+ .card-menu__boxckeck {
+     display :none;
  }
 
 

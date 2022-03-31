@@ -1,0 +1,65 @@
+/* --------------------------------------------------------------- */
+.few                                                               /* texte d'attente */
+{
+    display: block;
+    color: var(--dark-tertiary);
+    text-align: center;
+    font-size:10px;
+    padding: 15px;
+    margin:40%;
+    margin-top:50%;
+}
+
+/* --------------------------------------------------------------- */
+.loading                                                            /* animation hide pour cacher la page d'accueil  */
+{
+    display: block;
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    /* --------------------------------------------------------- */
+    background-color: var(--light-secondary);                    /* couleur du fond ... mettre un dégradé ? */ 
+    animation: hideLoader 5s 1 forwards;
+    animation-delay: 2s;
+}
+
+/* ------------------------------------------------------------ */
+.loading:after                                                  /* animation spin après le cache */
+{
+    content : "";
+    display: block;
+    position: absolute;
+    /* --------------------------------------------------------- */    
+    top: 50%;                                                    /* pour centrer */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* ---------------------------------------------------------*/
+    width: 60px;                                                  /* design de la bordure */
+    height: 60px;
+    border: var(--tertiary) solid 5px;
+    border-top-color: var(--primary);
+    border-bottom-color: var(--secondary);
+    border-radius: 20%;
+    animation: rotate 1s linear infinite;
+}
+ 
+/* ------------------------------------------------------------ */
+@keyframes hideLoader                                           /* Code de la 1ère animation : cacher (hide) */
+{
+    100%
+    {
+        opacity: 0;                                             /* pour ne rien laisser paraître */
+        display: none;
+    }
+}
+    
+/* ------------------------------------------------------------ */
+@keyframes rotate                                               /* Code de la 2ème animation : tourner (rotate) */
+{
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
