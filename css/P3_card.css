@@ -70,19 +70,25 @@
 /* ------------------ Coeur ------------------- */
 /* ============================================== */
 
-#heart {
+
+
+input[type="checkbox"].heart {
     display: none;
-}
-
-label.far {
-    color: black;
-
-}
-  
-#heart + label.far:before {
-    content: "\f004"; /* heart */
   }
-  
+  input[type="checkbox"].heart + label::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f004';
+    font-size: 1.2em;  
+    color: black;
+    margin-right: 0.3rem  ;
+  }
+  input[type="checkbox"].heart:checked + label::before {
+    content:'\f058';
+    color: var(--secondary);
+
+
+
+ 
 #heart:hover + label.far::after {
     content: "\f0aa";
   }

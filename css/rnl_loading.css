@@ -23,6 +23,7 @@
     background-color: var(--light-secondary);                    /* couleur du fond ... mettre un dégradé ? */ 
     animation: hideLoader 5s 1 forwards;
     animation-delay: 2s;
+    
 }
 
 /* ------------------------------------------------------------ */
@@ -52,6 +53,7 @@
     {
         opacity: 0;                                             /* pour ne rien laisser paraître */
         display: none;
+        z-index:-10;
     }
 }
     
@@ -62,4 +64,6 @@
     {
         transform: translate(-50%,-50%) rotate(360deg);
     }
+
 }
+

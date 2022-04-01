@@ -11,7 +11,6 @@
             <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="./css/normalize.css" /> <!-- pour assurer la cohérence entre les navigateurs -->
-
             <link rel="stylesheet" href="./css/rnl_main.css"/>
             <link rel="stylesheet" href="./css/rnl_colors.css"/>
             <link rel="stylesheet" href="./css/rnl_font.css"/>
@@ -21,13 +20,20 @@
             <link rel="stylesheet" href="./css/P3_fonctionnement.css"/>
             <link rel="stylesheet" href="./css/P3_card.css"/>
             <link rel="stylesheet" href="./css/P3_footer.css"/>
+            <!--
             <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/P3_media_portable.css" /> 
+            -->
         <title>ohmyfood</title>
     </head>
 
     <body>
-        <span class="loading"><span class="few">few seconds</span></span>
+<!-- LOADING SPINNER -->
+<!--
+                <span class="loading"><span class="few">few seconds</span></span>
+-->
+
         <header class="header">
+
             <h1 class="header__logo">
                 ohmyfood
             </h1>      
@@ -62,24 +68,24 @@
 
             <nav class="d">
                 <ol class="fct">
-                    <li class="menu card-rounded choix">
-                        <a class="test" href="#">
+                    <li class="menu card-rounded ">
+                        <a class="fct" href="#">
                             <i class="fa-solid fa-mobile-screen-button icon--x-large"></i>
                             Choisissez un restaurant
                         </a>
                     </li>
                     
                     
-                    <li class="menu card-rounded choix">
-                        <a class="test" href="#">
-                            <i class="fa-solid fa-bars icon--x-large"></i>
+                    <li class="menu card-rounded ">
+                        <a class="fct" href="#">
+                            <i class="fa-solid fa-list-ul icon--x-large"></i>
                             Composez votre menu
                         </a>
                     </li>
                     
                     
-                    <li class="menu card-rounded choix">
-                        <a class="test" href="#">
+                    <li class="menu card-rounded ">
+                        <a class="fct" href="#">
                             <i class="fa-solid fa-store icon--x-large"></i>
                             Dégustez au restaurant
                         </a>
@@ -104,14 +110,11 @@
                             <p class="card-restau__label rnl_font--15b">La palette du goût</p>
                             <p class="card-restau__loc rnl_font--15">Ménilmontant</p>
                         </div>
-                        <form>
-                            <div class="card-restau__heart">
-                                <input type="checkbox" id="heart" >
-                                <label for="heart" class="far icon--x-large"></label>
-                                <i class="fa-regular fa-heart icon--x-large"></i><!--
-                                <i class="fa-solid fa-heart icon--x-large"></i>-->
-                            </div>
+                        <form class="card-restau__heart">
+                            <input type="checkbox" class="heart" id="heart1">
+                            <label for="heart1"></label>
                         </form>
+                       
                     </article>
                 </a>
 
@@ -125,10 +128,10 @@
                             <p class="card-restau__label rnl_font--15b">La note enchantée</p>
                             <p class="card-restau__loc rnl_font--15">Charonne</p>
                         </div>
-                        <div class="card-restau__heart">
-                            <i class="fa-regular fa-heart icon--x-large"></i>
-                            <i class="fa-solid fa-heart icon--x-large"></i>
-                        </div>
+                        <form class="card-restau__heart">
+                            <input type="checkbox" class="heart" id="heart2">
+                            <label for="heart2"></label>
+                        </form>
                     </article>
                 </a>
 
@@ -141,10 +144,10 @@
                             <p class="card-restau__label rnl_font--15b">A la française</p>
                             <p class="card-restau__loc rnl_font--15">Cité Rouge</p>
                         </div>
-                        <div class="card-restau__heart">
-                            <i class="fa-regular fa-heart icon--x-large"></i>
-                            <i class="plein fa-solid fa-heart icon--x-large"></i>
-                        </div>
+                        <form class="card-restau__heart">
+                            <input type="checkbox" class="heart" id="heart3">
+                            <label for="heart3"></label>
+                        </form>
                     </article>
                 </a>
 
@@ -157,10 +160,10 @@
                             <p class="card-restau__label rnl_font--15b">Le délice des sens</p>
                             <p class="card-restau__loc rnl_font--15">Folie Méricourt</p>
                         </div>
-                        <div class="card-restau__heart">
-                            <i class="fa-regular fa-heart icon--x-large"></i>
-                            <i class="fa-solid fa-heart icon--x-large"></i>
-                        </div>
+                        <form class="card-restau__heart">
+                            <input type="checkbox" class="heart" id="heart4">
+                            <label for="heart4"></label>
+                        </form>
                     </article>
                 </a>
             </div>

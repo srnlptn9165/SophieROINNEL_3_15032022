@@ -61,5 +61,9 @@ li i {
     background-color: var(--light-secondary);
 }
 
+nav a:hover {
+    color: black;
+    box-shadow: 0px 10px 10px var(--grey);
+}
 
 

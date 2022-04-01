@@ -109,6 +109,9 @@ img.restau-img {
 .card-menu__commentaire {  /* commentaire du plat */
     padding-left: 20px;
     margin: 0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
 }
 
 .card-menu__boxprix{
@@ -149,6 +152,9 @@ img.restau-img {
 }
  .card-menu__boxprix:hover {   /* Survol du prix d'un plat pour affichage icon check*/
     color: var(--tertiary);
+    background-color: var(--tertiary);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
  }
     
     .fa-circle-check {

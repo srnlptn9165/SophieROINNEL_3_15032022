@@ -3,6 +3,7 @@
 
 .location {
     background-color: var(--grey);                                /* bandeau gris pour la localisation */
+    box-shadow: 0px -2px 9px var(--dark-grey);
 }
 
 .search {                                                               /* positionnement de l'icon + input loc */
@@ -30,11 +31,12 @@
 }
 /*attention peut ne pas concerner pas tous les input ! */
 input {                                                                 /* Zone de saisie Recherche de lieu */ 
-    padding: 10px ;
-    border: var(--grey);
+    padding: 20px ;
+    border: none;
     width: 200px;
     background-color: var(--grey);
     cursor:pointer;
+    font-weight: bold;
     }
 
 .description {                                                          /* Bloc descriptif fond gris très clair */
