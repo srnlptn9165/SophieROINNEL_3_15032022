@@ -56,6 +56,29 @@ img.restau-img {
 .reference .fa-heart  {          /* coeur page restaurant */
     padding: 20px;
 }
+.rnl-font {
+    position: relative;
+}
+.reference .fa-regular {
+    position: absolute;
+    top: 0%;
+    left:82%;
+    color: black;
+}
+
+.reference .fa-solid {
+    color: var(--secondary);
+    opacity : 0; 
+}
+
+.reference .fa-regular:hover {
+    opacity : 0;
+    z-index : -1;
+}
+.reference .fa-solid:hover {
+    opacity : 1;
+    z-index : 1;
+}
 
 .deroule {
     margin-top: 30px;
