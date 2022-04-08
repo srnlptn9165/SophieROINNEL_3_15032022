@@ -51,12 +51,18 @@ input {                                                                 /* Zone 
 
 .btn-exp {
     background-color: var(--secondary);                                /* For browsers that do not support gradients */
-    background-image: linear-gradient(var(--secondary), var(--primary));
+    background-image: linear-gradient(250deg, var(--secondary), var(--primary));
     color: white;
     padding: 15px 20px;
     margin: 20px 0 ;
     border: none;
     cursor:pointer;
+    box-shadow: 2px 2px 5px 0px rgba (0,0,0,0.5);
+    transition: 2s ease-out;
+}
+
+.btn-exp:hover {
+    background-blend-mode: lighten;
 }
 
 /* ============================================== */
