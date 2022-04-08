@@ -69,6 +69,7 @@ img.restau-img {
 .reference .fa-solid {
     color: var(--secondary);
     opacity : 0; 
+    
 }
 
 .reference .fa-regular:hover {
@@ -78,6 +79,7 @@ img.restau-img {
 .reference .fa-solid:hover {
     opacity : 1;
     z-index : 1;
+    transition : 2s ease;
 }
 
 .deroule {
@@ -173,22 +175,21 @@ img.restau-img {
 .fa-circle-check{              /* non affichage de l'icon check */
     display:none
 }
- .card-menu__boxprix:hover {   /* Survol du prix d'un plat pour affichage icon check*/
+
+.card-menu__boxprix:hover {   /* Survol du prix d'un plat pour affichage icon check*/
     color: var(--tertiary);
     background-color: var(--tertiary);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
- }
+}
     
-    .fa-circle-check {
-        color: var(--tertiary);
-    }
-    
- 
+.fa-circle-check {
+    color: var(--tertiary);
+}
 
- .card-menu__boxckeck {
+.card-menu__boxckeck {
      display :none;
- }
+}
 
 
 
